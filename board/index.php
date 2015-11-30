@@ -27,7 +27,7 @@
 </head>
 <body>
 	<article class="boardArticle">
-		<h3>자유게시판</h3>
+		<h3>자유게시판1</h3>
 		<div id="boardList">
 			<form action="removephp1.php" method="post">
 				<div class="btnSet">
@@ -35,7 +35,7 @@
 					<input type="submit" name="submit" value="remove">
 				</div>
 				<table>
-					<caption class="readHide">자유게시판</caption>
+					<caption class="readHide">자유게시판1</caption>
 					<thead>
 						<tr>
 							<?php if ($is_admin): ?>
