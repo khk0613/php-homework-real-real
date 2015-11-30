@@ -20,9 +20,9 @@
 		<div id="boardView">
 			<h3 id="boardTitle"><?php echo $row['b_title']?></h3>
 			<div id="boardInfo">
-				<span id="boardID">작성자: <?php echo $row['b_id']?></span>
-				<span id="boardDate">작성일: <?php echo $row['b_date']?></span>
-				<span id="boardHit">조회: <?php echo $row['b_hit']?></span>
+				<span id="boardID">작성자1: <?php echo $row['b_id']?></span>
+				<span id="boardDate">작성일1: <?php echo $row['b_date']?></span>
+				<span id="boardHit">조회1: <?php echo $row['b_hit']?></span>
 			</div>
 			<div id="boardContent"><?php echo $row['b_content']?></div>
 			<div id="boardContent1"> 
