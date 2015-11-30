@@ -1,5 +1,5 @@
 <?php
-	require_once("../dbconfig.php");
+	require_once("dbconfig.php");
 
 	function my_row($row) {
 		$datetime = explode(' ', $row['b_date']);

@@ -2,8 +2,7 @@
 	require_once("../dbconfig.php");
 	$bno = $_GET['bno']; // 화면으로 이동하기 위한 변수
 
-	$sql = 'select b_title, b_content, b_date, b_hit, b_id, screenshot from board_free where b_no = ' . $bno;
-	$result = $db->query($sql);
+	b->query($sql);
 	$row = $result->fetch_assoc();
 ?>
 <!DOCTYPE html>
