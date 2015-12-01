@@ -1,10 +1,6 @@
 <?php
 	header('Content-Type: text/html; charset=utf-8');
-	$db = new mysqli('127.0.0.1', 'root', '111', 'realboard');
+	$db = mysql_connect('127.0.0.1', 'root', '111', 'khk')
+	or die('DB 접속을 다시 확인해주세요!');
 
-	if ($db->connect_error) {
-		die('데이터베이스 연결에 문제가 있습니다.\n관리자에게 문의 바랍니다.');
-	}
-수정2
-	$db->set_charset('utf8');
 ?>
