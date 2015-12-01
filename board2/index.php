@@ -9,7 +9,7 @@
 </head>
 <body>
 	<article class="boardArticle">
-		<h3>자유게시판</h3>
+		<h3>자유게시판 수정버전</h3>
 		<div id="boardList">
 			<form action="removephp1.php" method="post">
 				<div class="btnSet">
