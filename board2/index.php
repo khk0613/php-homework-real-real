@@ -9,7 +9,7 @@
 </head>
 <body>
 	<article class="boardArticle">
-		<h3>자유게시판 수정버전</h3>
+		<h3>자유게시판 수정버전입니다.</h3>
 		<div id="boardList">
 			<form action="removephp1.php" method="post">
 				<div class="btnSet">
@@ -17,7 +17,7 @@
 					<input type="submit" name="submit" value="remove">
 				</div>
 				<table>
-					<caption class="readHide">자유게시판 수정버전</caption>
+					<caption class="readHide">자유게시판 수정버전입니다.</caption>
 					<thead>
 						<tr>
 							<th scope="col" class="delete">체크박스</th>
