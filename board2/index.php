@@ -9,11 +9,11 @@
 </head>
 <body>
 	<article class="boardArticle">
-		<h3>자유게시판1</h3>
+		<h3>자유게시판</h3>
 		<div id="boardList">
 			<form action="removephp1.php" method="post">
 				<div class="btnSet">
-					 <a href="./write.php" class="btnWrite btn">글쓰기</a>
+					 <!-- <a href="./write.php" class="btnWrite btn">글쓰기</a> -->
 					<input type="submit" name="submit" value="remove">
 				</div>
 				<table>
