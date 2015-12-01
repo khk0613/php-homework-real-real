@@ -17,7 +17,7 @@
 					<input type="submit" name="submit" value="remove">
 				</div>
 				<table>
-					<caption class="readHide">자유게시판1</caption>
+					<caption class="readHide">자유게시판 수정버전</caption>
 					<thead>
 						<tr>
 							<th scope="col" class="delete">체크박스</th>
