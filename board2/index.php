@@ -3,7 +3,7 @@
 <html>
 <head>
 	<meta charset="utf-8" />
-	<title>자유게시판 | KHK</title>
+	<title>자유게시판수정 | KHK</title>
 	<link rel="stylesheet" href="./css/normalize.css" />
 	<link rel="stylesheet" href="./css/board.css" />
 </head>
