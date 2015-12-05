@@ -16,8 +16,8 @@
 					<caption class="readHide">자유게시판 글쓰기</caption>
 					<tbody>
 						<tr>
-							<th scope="row"><label for="bID">아이디</label></th>
-							<td class="id"><input type="text" name="bID" id="bID"></td>
+							<th scope="row"><label for="bId">아이디</label></th>
+							<td class="id"><input type="text" name="bId" id="bId"></td>
 						</tr>
 						<tr>
 							<th scope="row"><label for="bEmail">이메일</label></th>
