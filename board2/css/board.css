@@ -19,7 +19,7 @@
 
 #boardWrite table {width:720px}
 #boardWrite th {width:100px;padding:5px;text-align:right;vertical-align: top}
-#boardWrite td {width:620px;padding:5px}
+#boardWrite td {width:300px;padding:5px}
 
 #boardWrite #bID {width:180px}
 #boardWrite #bPassword {width:180px}

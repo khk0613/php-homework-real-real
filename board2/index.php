@@ -23,7 +23,7 @@
 							<th scope="col" class="title">제목</th>
 							<th scope="col" class="author">작성자</th>
 							<th scope="col" class="date">작성일</th>
-							<th scope="col" class="hit">조회</th>
+							<!-- <th scope="col" class="hit">조회</th> -->
 						</tr>
 					</thead>
 					<tbody>

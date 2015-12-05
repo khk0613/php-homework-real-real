@@ -20,8 +20,8 @@
 							<td class="id"><input type="text" name="bID" id="bID"></td>
 						</tr>
 						<tr>
-							<!-- <th scope="row"><label for="bPassword">비밀번호</label></th>
-							<td class="password"><input type="text" name="bPassword" id="bPassword"></td> -->
+							<th scope="row"><label for="bEmail">이메일</label></th>
+							<td class="password"><input type="text" name="bEmail" id="bEmail"></td>
 						</tr>
 						<tr>
 							<th scope="row"><label for="bTitle">제목</label></th>
