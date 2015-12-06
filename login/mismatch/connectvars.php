@@ -1,7 +1,7 @@
 <?php
   // Define database connection constants
-  define('DB_HOST', 'data.mis-match.net');
-  define('DB_USER', 'admin');
-  define('DB_PASSWORD', 'douluveme');
-  define('DB_NAME', 'mismatchdb');
+  define('DB_HOST', '127.0.0.1');
+  define('DB_USER', 'root');
+  define('DB_PASSWORD', '111');
+  define('DB_NAME', 'mismatch');
 ?>
