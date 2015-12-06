@@ -17,34 +17,36 @@
   $dbc = mysqli_connect(DB_HOST, DB_USER, DB_PASSWORD, DB_NAME);
 
   if (isset($_POST['submit'])) {
-    // Grab the profile data from the POST
+    // 입력폼에서 POST를 통해서 데이터 얻기
     $username = mysqli_real_escape_string($dbc, trim($_POST['username']));
     $password1 = mysqli_real_escape_string($dbc, trim($_POST['password1']));
     $password2 = mysqli_real_escape_string($dbc, trim($_POST['password2']));
 
     if (!empty($username) && !empty($password1) && !empty($password2) && ($password1 == $password2)) {
-      // Make sure someone isn't already registered using this username
+      // 동일한 아이디가 있는지 검사
       $query = "SELECT * FROM mismatch_user WHERE username = '$username'";
+      
       $data = mysqli_query($dbc, $query);
+
       if (mysqli_num_rows($data) == 0) {
-        // The username is unique, so insert the data into the database
+        // 사용가능한 사용자 이름이므로 데이터베이스에 데이터를 저장
         $query = "INSERT INTO mismatch_user (username, password, join_date) VALUES ('$username', SHA('$password1'), NOW())";
         mysqli_query($dbc, $query);
 
         // Confirm success with the user
-        echo '<p>Your new account has been successfully created. You\'re now ready to <a href="login.php">log in</a>.</p>';
+        echo '<p>계정이 새롭게 만들어 졌습니다. You\'re now ready to <a href="login.php">log in</a>.</p>';
 
         mysqli_close($dbc);
         exit();
       }
       else {
         // An account already exists for this username, so display an error message
-        echo '<p class="error">An account already exists for this username. Please use a different address.</p>';
+        echo '<p class="error">이미 존재하는 이름입니다.. Please use a different address.</p>';
         $username = "";
       }
     }
     else {
-      echo '<p class="error">You must enter all of the sign-up data, including the desired password twice.</p>';
+      echo '<p class="error">같은 패스워드를 입력해주세요.</p>';
     }
   }
 
