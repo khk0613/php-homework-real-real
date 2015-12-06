@@ -1,4 +1,5 @@
 <?php
+header('Location:http://localhost/php-homework-hk/board/index.php');
 require_once("dbconfig.php");
 
 $bID = $_POST['bID'];
@@ -23,6 +24,6 @@ define('SCREENSHOT_UPLOAD_PATH', 'images/');
 ?>
 <script>
 		alert("<?php echo $msg?>");
-		location.href="http://localhost/php-homework-hk/board/index.php";
+		//location.href="http://localhost/php-homework-hk/board/index.php";
 </script>
 	
