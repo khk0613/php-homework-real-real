@@ -10,6 +10,7 @@
   <h3>Mismatch - View Profile</h3>
 
 <?php
+  require_once('login.php');
   require_once('appvars.php');
   require_once('connectvars.php');
 

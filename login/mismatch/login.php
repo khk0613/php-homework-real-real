@@ -78,7 +78,7 @@
   }
   else {
     // Confirm the successful log-in
-    echo('<p class="login">You are logged in as ' . $_SESSION['username'] . '.</p>');
+    echo('<p class="login">너는 ' . $_SESSION['username'] . '로 로그인 했다</p>');
   }
 ?>
 

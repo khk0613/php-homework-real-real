@@ -16,6 +16,7 @@
   // Generate the navigation menu
   echo '&#10084; <a href="viewprofile.php">View Profile</a><br />';
   echo '&#10084; <a href="editprofile.php">Edit Profile</a><br />';
+  echo '&#10084; <a href="signup.php">회원가입</a><br />';
 
   // Connect to the database 
   $dbc = mysqli_connect(DB_HOST, DB_USER, DB_PASSWORD, DB_NAME); 
