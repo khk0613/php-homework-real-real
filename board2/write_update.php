@@ -1,5 +1,5 @@
 <?php
-	header('Location:http://localhost/php-homework-hk/board2/index.php');
+	//header('Location:http://localhost/php-homework-hk/board2/index.php');
 	require_once("dbconfig.php");
 
 	//변수선언
@@ -8,7 +8,7 @@
 	$bContent = $_POST['bContent'];
 	$bEmail = $_POST['bEmail'];
 	$bDate = date('Y-m-d H:i:s');
-
+	$home = "http://localhost/php-homework-hk/board2/index.php";
 
 
 	$query = "INSERT INTO khk (khk_id, khk_title, khk_article, khk_email, khk_date)".
@@ -20,7 +20,8 @@
 		//쿼리가 잘 날라갔다면..
 		$msg = "정상적으로 글이 등록되었습니다.";
 		$bNo = $dbc->insert_id;
-		$replaceURL = 'view.php?bno='.$bNo;
+		//$replaceURL = 'view.php?bno='.$bNo;
+
 	}
 	else{
 		$msg = "글을 등록하지 못했습니다.";
@@ -36,5 +37,5 @@
 ?>
 <script>
 		alert("<?php echo $msg?>");
-		location.replace($replaceURL);
+		location.href=($home);
 </script>
