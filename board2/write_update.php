@@ -37,5 +37,5 @@
 ?>
 <script>
 		alert("<?php echo $msg?>");
-		location.href=($home);
+		location.href=("<?php echo $home?>");
 </script>
