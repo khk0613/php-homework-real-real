@@ -1,3 +1,10 @@
+<?php
+	require_once("dbconfig.php");
+	$query = 'SELECT * FROM khk order by id desc';
+	$result = mysqli_query($dbc,$query) or die("오류");
+	//$row = mysqli_fetch_assoc($result);
+
+?>
 
 <!DOCTYPE html>
 <html>
@@ -27,7 +34,22 @@
 						</tr>
 					</thead>
 					<tbody>
-						
+						<?php
+							while($row = mysqli_fetch_assoc($result))
+								{
+							?>
+							<tr>
+								<td><?php echo $row['id']?></td>
+								<td><?php echo $row['khk_title']?></td>
+								<td><?php echo $row['khk_id']?></td>
+								<td><?php echo $row['khk_date']?></td>	
+							</tr>
+							<?php 
+								}
+
+							?>							
+
+							
 					</tbody>
 				</table>
 				<div class="btnSet">
