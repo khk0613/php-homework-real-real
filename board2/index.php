@@ -14,7 +14,7 @@
 	<link rel="stylesheet" href="./css/normalize.css" />
 	<link rel="stylesheet" href="./css/board.css" />
 </head>
-<body>a
+<body>
 	<article class="boardArticle">
 		<h3>자유게시판</h3>
 		<div id="boardList">
@@ -37,7 +37,7 @@
 						<?php
 							while($row = mysqli_fetch_assoc($result))
 								{
-								$datetime = explode(' ', $row['khk_date']); // '2015-12-05 공백 23:58:31' 공백을 기준으로 나눠서 datetime에 저장
+								$datetime = explode(' ', $row['khk_date']); // '2015-12-05 '공백'' 23:58:31' 공백을 기준으로 나눠서 datetime에 저장
 																				//(2015-12-05)와 (23:58:31)로 나눠짐
 								$date = $datetime[0]; // 0번째 2015-12-05 담기
 								$time = $datetime[1]; // 1번째 23:50:31 담았음
@@ -45,7 +45,7 @@
 								if($date == DATE('Y-m-d')){
 									$row['khk_date'] = $date;
 								} else{
-									//$row['khk_date'] = $time;
+									$row['khk_date'] = $time;
 								}
 
 							?>
