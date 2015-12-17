@@ -44,9 +44,9 @@
 
 								if($date == DATE('Y-m-d')){
 									$row['khk_date'] = $date;
-								} else{
-									$row['khk_date'] = $time;
-								}
+								// } else{
+								// 	$row['khk_date'] = $time;
+								 }
 
 							?>
 							<tr>
