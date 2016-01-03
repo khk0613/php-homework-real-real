@@ -23,10 +23,10 @@ $row = mysqli_fetch_assoc($result);
 				<div id="boardView">
 					<h3 id="boardTitle"><?php echo $row['khk_title']?></h3>
 						<div id="boardInfo">
-							<span id="boardID"><?php echo $row['khk_id']?></span>
+							<span id="boardID"><?= htmlspecialchars($row['khk_id']) ?></span>
 							<span id="boardDate"><?php echo $row['khk_date']?></span>
 						</div>
-					<div id="boardContent"><?php echo $row['khk_article']?></div>
+					<div id="boardContent" style="height:200px;"><?php echo $row['khk_article']?></div>
 				</div>
 				<div class="btnSet">
 					<a href="./write.php?no=<?php echo $no?>">수정</a>

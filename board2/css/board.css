@@ -1,4 +1,4 @@
-.boardArticle {width:720px}
+.boardArticle {width:720px; margin: 0 auto;}
 
 /* 글목록 */
 
@@ -27,3 +27,4 @@
 #boardWrite #bContent {width:550px;height:300px}
 
 #boardWrite .btnSet {text-align:center}
+#boardContent{height: 400px;}

@@ -1,9 +1,7 @@
 <?php
 	require_once("dbconfig.php");
-	$query = 'SELECT * FROM khk order by id desc';
+	$query = 'SELECT * FROM khk ORDER BY id DESC';
 	$result = mysqli_query($dbc,$query) or die("오류");
-	$row = mysqli_fetch_assoc($result);
-
 ?>
 
 <!DOCTYPE html>
@@ -35,8 +33,7 @@
 					</thead>
 					<tbody>
 						<?php
-							while($row = mysqli_fetch_assoc($result))
-								{
+							while ($row = mysqli_fetch_assoc($result)) {
 								$datetime = explode(' ', $row['khk_date']); // '2015-12-05 '공백'' 23:58:31' 공백을 기준으로 나눠서 datetime에 저장
 																				//(2015-12-05)와 (23:58:31)로 나눠짐
 								$date = $datetime[0]; // 0번째 2015-12-05 담기
@@ -48,19 +45,16 @@
 								// 	$row['khk_date'] = $time;
 								 }
 
-							?>
+						?>
 							<tr>
 								<td><?php echo $row['id']?></td>
-								<td><?php echo $row['khk_title']?></td>
-								<td><?php echo $row['khk_id']?></td>
+								<td> <a href="./view.php?no=<?php echo $row['id']?>"> <?php echo $row['khk_title']?></a></td>
+								<td><?= htmlspecialchars($row['khk_id']) ?></td>
 								<td><?php echo $row['khk_date']?></td>	
 							</tr>
-							<?php 
-								}
-
-							?>							
-
-							
+						<?php 
+							}
+						?>							
 					</tbody>
 				</table>
 				<div class="btnSet">
